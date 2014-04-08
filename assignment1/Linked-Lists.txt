@@ -1,0 +1,49 @@
+Implement a simple linked list. The linked list will be composed of two
+classes: LinkNode and LinkedList
+
+The LinkedList class should have the following private data members:
+	LinkNode * head;
+		-head is a pointer to the very first node of the LinkedList
+The LinkedList class should have the following public methods:
+	LinkNode * getHead();
+		-Returns the pointer to the head of the LinkedList
+	void insert(LinkNode * ptr);
+		-Inserts the node pointed to by ptr at the very front of the LinkedList
+
+The LinkNode class should have the following private data members:
+	LinkNode * next;
+		-a pointer to the next node in the LinkedList. The last
+		 node of the LinkedList should set next to NULL.
+	int data;
+		-Just some numerical data the node should hold
+The LinkNode class should have the following public methods:
+	LinkNode * getNext();
+		-Return a pointer to the next node in the LinkedList
+	int getData();
+		-Return the data stored in the node
+	void setNext(LinkNode * ptr);
+		-Set next to ptr
+	void setData(int d);
+		-Set the data to d
+
+Test out your linked list implementation by writing a program that
+reads the "data.txt" file and storing all entries into a LinkedList.
+Use the <ctime> library to test and time how long each of the following
+operations takes:
+	1. Iterating through the entire list. Print each entry.
+
+	2. Get the 5000th node and print the data stored in that node.
+
+	3. Insert a LinkNode containing the integer 0 as its data at the
+	   front of the LinkedList.
+
+Once the linked list tests are done, write a second program that reads
+"data.txt" and stores all the data into an int array that is 10001
+elements long. Use the <ctime> library again to time the following
+operations:
+	1. Iterate through the entire list. Print each entry.
+
+	2. Get the 5000th node and print the data stored in that node.
+
+	3. Insert the integer 0 at the very front of the array. Remember
+	   to shift all the elements over by 1 to make room for 0.
